@@ -1,0 +1,71 @@
+.backLink {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-bottom: 24px;
+}
+.backLink:hover { color: var(--color-text); }
+
+.progressHeader { margin-bottom: 32px; }
+.title { font-family: var(--font-serif); font-size: 2.2rem; font-weight: 400; margin-bottom: 4px; }
+.stepIndicator { font-size: 0.85rem; font-weight: 600; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.stepCard { padding: 32px; }
+.label { font-size: 0.95rem; font-weight: 600; color: var(--color-text); margin-bottom: 16px; }
+
+.typeOptions { display: flex; flex-direction: column; gap: 16px; margin-bottom: 28px; }
+.typeOption {
+  display: flex; align-items: center; gap: 20px;
+  padding: 20px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.typeOption:hover { border-color: var(--color-border-dark); background: var(--color-surface-2); }
+.typeOption h3 { font-size: 1.05rem; margin-bottom: 2px; }
+.typeOption p  { font-size: 0.85rem; color: var(--color-muted); line-height: 1.4; }
+.typeEmoji { font-size: 2rem; }
+
+.selectedLost {
+  border-color: var(--color-lost) !important;
+  background: var(--color-lost-bg) !important;
+}
+.selectedFound {
+  border-color: var(--color-found) !important;
+  background: var(--color-found-bg) !important;
+}
+
+.formGrid { display: flex; flex-direction: column; gap: 20px; margin-bottom: 28px; }
+
+.btnRow { display: flex; justify-content: space-between; align-items: center; }
+
+/* Success Card */
+.successCard {
+  padding: 40px 32px;
+  text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
+}
+.successIcon {
+  width: 64px; height: 64px;
+  background: var(--color-found-bg);
+  color: var(--color-found);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; font-weight: 700;
+}
+.summaryBox {
+  width: 100%;
+  background: var(--color-surface-2);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  text-align: left;
+  font-size: 0.9rem;
+  display: flex; flex-direction: column; gap: 8px;
+  margin: 12px 0;
+}
+.successActions { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+
+@media (max-width: 640px) {
+  .stepCard { padding: 20px; }
+}

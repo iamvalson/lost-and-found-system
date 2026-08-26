@@ -1,0 +1,72 @@
+.card {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+}
+
+.stripe {
+  height: 4px;
+  width: 100%;
+}
+.stripeFound { background: var(--color-found); }
+.stripeLost  { background: var(--color-lost); }
+
+.body {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.emoji { font-size: 1.6rem; line-height: 1; }
+.badges { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
+
+.category {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1.5px solid var(--color-border);
+}
+.meta { display: flex; gap: 12px; flex-wrap: wrap; }
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+}
+.holding {
+  font-size: 0.775rem;
+  color: var(--color-found);
+  font-weight: 500;
+}

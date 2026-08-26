@@ -1,0 +1,81 @@
+.backLink {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-bottom: 24px;
+}
+.backLink:hover { color: var(--color-text); }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 32px;
+  align-items: start;
+}
+
+.mainCol { display: flex; flex-direction: column; gap: 24px; }
+.sideCol { display: flex; flex-direction: column; gap: 16px; }
+
+.detailCard { padding: 32px; }
+
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 20px; flex-wrap: wrap; gap: 12px;
+}
+.badges { display: flex; gap: 8px; align-items: center; }
+.categoryPill { font-size: 0.8rem; font-weight: 600; color: var(--color-muted); background: var(--color-surface-2); padding: 2px 8px; border-radius: var(--radius-xs); }
+.date { font-size: 0.82rem; color: var(--color-muted); }
+
+.description { font-family: var(--font-serif); font-size: 2rem; font-weight: 400; line-height: 1.25; margin-bottom: 24px; }
+
+.metaBox {
+  background: var(--color-surface-2);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.metaItem { display: flex; gap: 12px; font-size: 0.9rem; align-items: baseline; }
+.metaLabel { font-weight: 600; color: var(--color-text-2); min-width: 140px; }
+.metaVal { color: var(--color-text); }
+
+.claimCard { padding: 28px; border-color: var(--color-accent-lt); background: #fdfbf7; }
+.claimCard h2 { font-size: 1.3rem; margin-bottom: 6px; }
+.claimSub { font-size: 0.875rem; color: var(--color-muted); margin-bottom: 16px; }
+.claimForm { display: flex; flex-direction: column; gap: 12px; }
+
+.claimSuccessBox {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--color-found-bg); color: var(--color-found);
+  padding: 16px; border-radius: var(--radius-sm); font-size: 0.88rem;
+}
+.loginPrompt {
+  background: var(--color-surface-2); padding: 16px; border-radius: var(--radius-sm);
+  display: flex; justify-content: space-between; align-items: center; font-size: 0.88rem;
+}
+
+.resolvedNotice {
+  background: var(--color-resolved-bg); color: var(--color-resolved);
+  padding: 16px 20px; border-radius: var(--radius-sm); font-weight: 500; font-size: 0.9rem;
+}
+
+.sideHeader h3 { font-size: 1.1rem; margin-bottom: 4px; }
+.sideHeader p  { font-size: 0.82rem; color: var(--color-muted); }
+
+.matchesList { display: flex; flex-direction: column; gap: 16px; }
+.matchItem { padding: 16px; border-color: var(--color-accent); }
+
+.matchScoreBar { margin-bottom: 10px; }
+.matchScoreBadge {
+  background: var(--color-accent-lt); color: var(--color-accent);
+  font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-full);
+}
+
+.reasonsList {
+  font-size: 0.78rem; color: var(--color-text-2); margin-bottom: 12px;
+  display: flex; flex-direction: column; gap: 3px;
+}
+.matchReportPreview { margin-top: 8px; }
+
+@media (max-width: 960px) {
+  .layout { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,62 @@
+.header { margin-bottom: 32px; }
+.adminPill {
+  font-size: 0.75rem; font-weight: 700; color: var(--color-accent);
+  letter-spacing: 0.08em; display: inline-block; margin-bottom: 6px;
+}
+.title { font-family: var(--font-serif); font-size: 2.4rem; font-weight: 400; }
+.sub { color: var(--color-muted); font-size: 0.95rem; }
+
+.statsGrid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+  margin-bottom: 48px;
+}
+
+.statCard {
+  padding: 24px; display: flex; flex-direction: column; gap: 4px;
+}
+.statVal { font-size: 2.2rem; font-weight: 700; color: var(--color-text); line-height: 1; }
+.statLabel { font-size: 0.85rem; font-weight: 600; color: var(--color-muted); }
+
+.sectionHead { margin-bottom: 24px; }
+.sectionHead h2 { font-size: 1.4rem; margin-bottom: 4px; }
+.sectionHead p  { font-size: 0.88rem; color: var(--color-muted); }
+
+.claimsGrid { display: flex; flex-direction: column; gap: 20px; }
+
+.claimReviewCard { padding: 28px; }
+
+.claimReviewHead {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 20px;
+}
+.claimDate { font-size: 0.82rem; color: var(--color-muted); }
+
+.claimReviewBody {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  margin-bottom: 20px;
+}
+
+.infoBlock {
+  background: var(--color-surface-2); border-radius: var(--radius-sm);
+  padding: 18px; font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px;
+}
+.claimantBlock { background: var(--color-accent-lt); }
+
+.blockLabel { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: var(--color-muted); }
+.blockTitle { font-size: 1rem; font-weight: 600; color: var(--color-text); }
+.metaRow { display: flex; flex-direction: column; gap: 4px; font-size: 0.82rem; color: var(--color-muted); margin-top: 6px; }
+
+.noteContent { font-size: 0.9rem; color: var(--color-text); line-height: 1.5; margin-top: 4px; }
+
+.claimActions {
+  display: flex; justify-content: flex-end; gap: 12px;
+  padding-top: 16px; border-top: 1.5px solid var(--color-border);
+}
+
+@media (max-width: 1024px) {
+  .statsGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .claimReviewBody { grid-template-columns: 1fr; }
+  .statsGrid { grid-template-columns: 1fr; }
+}
