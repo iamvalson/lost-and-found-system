@@ -1,4 +1,8 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8085';
+let rawApiUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8085').trim();
+if (rawApiUrl && !rawApiUrl.startsWith('http://') && !rawApiUrl.startsWith('https://')) {
+  rawApiUrl = `https://${rawApiUrl}`;
+}
+const API_BASE = rawApiUrl.replace(/\/+$/, '');
 
 // ─── Token helpers ────────────────────────────────────────────────────────────
 export function getToken() {
